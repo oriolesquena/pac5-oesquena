@@ -1,0 +1,100 @@
+{
+  "configVersion": 1,
+  "timestamp": 1704809445737,
+  "index": "/pac5-oesquena/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/pac5-oesquena/favicon.ico",
+        "/pac5-oesquena/index.html",
+        "/pac5-oesquena/main.0eb2d3b94218fb1e.js",
+        "/pac5-oesquena/manifest.webmanifest",
+        "/pac5-oesquena/polyfills.4ab36617f37802a3.js",
+        "/pac5-oesquena/runtime.d7770f7a57d3c1c0.js",
+        "/pac5-oesquena/styles.6507e0fc35322572.css"
+      ],
+      "patterns": [
+        "https:\\/\\/cdn\\.jsdelivr\\.net\\/npm\\/bootstrap@5\\.0\\.2\\/dist\\/css\\/bootstrap\\.min\\.css"
+      ]
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/pac5-oesquena/assets/css/animate.css",
+        "/pac5-oesquena/assets/icons/icon-128x128.png",
+        "/pac5-oesquena/assets/icons/icon-144x144.png",
+        "/pac5-oesquena/assets/icons/icon-152x152.png",
+        "/pac5-oesquena/assets/icons/icon-192x192.png",
+        "/pac5-oesquena/assets/icons/icon-384x384.png",
+        "/pac5-oesquena/assets/icons/icon-512x512.png",
+        "/pac5-oesquena/assets/icons/icon-72x72.png",
+        "/pac5-oesquena/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "users-api",
+      "patterns": [
+        "https:\\/\\/reqres\\.in\\/api\\/users\\/.*"
+      ],
+      "strategy": "freshness",
+      "maxSize": 10,
+      "maxAge": 3600000,
+      "timeoutMs": 1000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/pac5-oesquena/assets/css/animate.css": "1cd1ef926d3aff6887e6c02933e818b8a78db0b0",
+    "/pac5-oesquena/assets/icons/icon-128x128.png": "b1f06c7d714abb4a0cc4d1f7c954feb26826e4c4",
+    "/pac5-oesquena/assets/icons/icon-144x144.png": "96a0d629765c1bc85d9263c6bc83094ca776d267",
+    "/pac5-oesquena/assets/icons/icon-152x152.png": "b1fbbee3902eb96a7658e3bb006f31f78ca5a44c",
+    "/pac5-oesquena/assets/icons/icon-192x192.png": "e4211163bf0911688fbfb80278d8ff4d2f77691d",
+    "/pac5-oesquena/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/pac5-oesquena/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/pac5-oesquena/assets/icons/icon-72x72.png": "279825a1ac4377032ae996a1832c641e33ccf1b6",
+    "/pac5-oesquena/assets/icons/icon-96x96.png": "592885efcbfee27e5e20be4fa3043589390d2740",
+    "/pac5-oesquena/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/pac5-oesquena/index.html": "67b4013cff396f26c72a3353aa5edbf380d2298e",
+    "/pac5-oesquena/main.0eb2d3b94218fb1e.js": "ee192def5bd84c128c914fe49214b5ad1d9d85f4",
+    "/pac5-oesquena/manifest.webmanifest": "79db40bf6024c3587bc97ef3457c0422fdb155b2",
+    "/pac5-oesquena/polyfills.4ab36617f37802a3.js": "1a1de762234e269ceb4f3e0a91e02419cd97b44e",
+    "/pac5-oesquena/runtime.d7770f7a57d3c1c0.js": "d200c6893e197b5acc70a6044a1d7870d283506a",
+    "/pac5-oesquena/styles.6507e0fc35322572.css": "1c428c356d3ad7dd744d877cb29ee6f7ce441188"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
