@@ -45,9 +45,5 @@ export class UsersComponent implements OnInit {
   onViewChange(view: string) {
     this.localStorageService.set('view', view)
     this.selectedView = view;
-    this.processing = true;
-    setTimeout(() => {
-      this.processing = false;
-    }, 400);
   }
 }
