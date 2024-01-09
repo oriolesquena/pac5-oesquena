@@ -1,4 +1,11 @@
-<mat-grid-list cols="2" rowHeight="3:1">
+<mat-grid-list class="d-none d-md-block" style="min-height: 500px;" cols="2" rowHeight="fit">
+    <mat-grid-tile *ngFor="let user of users"><a [routerLink]="['/user', user.id]"
+            class="w-100 p-3 text-decoration-none animate__animated animate__bounce animate__fadeIn">
+            <app-card [user]="user"></app-card>
+        </a></mat-grid-tile>
+</mat-grid-list>
+
+<mat-grid-list class="d-md-none" style="min-height: 1000px;" cols="1" rowHeight="fit">
     <mat-grid-tile *ngFor="let user of users"><a [routerLink]="['/user', user.id]"
             class="w-100 p-3 text-decoration-none animate__animated animate__bounce animate__fadeIn">
             <app-card [user]="user"></app-card>

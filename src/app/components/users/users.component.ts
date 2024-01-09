@@ -36,6 +36,7 @@ export class UsersComponent implements OnInit {
         }
       },
       error: (error: any) => {
+        this.processing = false;
         console.error('Error getting users:', error);
       }
     });
