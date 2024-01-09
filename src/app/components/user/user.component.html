@@ -1,0 +1,21 @@
+<div class="container mt-5">
+    <mat-spinner *ngIf="processing" class="mx-auto my-5"></mat-spinner>
+    <div *ngIf="!processing && user" class="row animate__animated animate__bounce animate__fadeIn">
+        <div class="col-md-9">
+            <p><strong>Name: </strong>{{user.first_name}} {{user.last_name}}</p>
+            <img style="width: 128px; height: 128px;" class="rounded" src="{{user.avatar}}" alt="">
+        </div>
+        <div class="col-md-3">
+            <a class="btn btn-danger" routerLink="/">Back</a>
+        </div>
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" class="col-md-9 my-4">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    {{panelOpenState ? 'Hide details' : 'Show all details'}}
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <p><strong>Identifier: </strong>{{user.id}}</p>
+            <p><strong>Email: </strong>{{user.email}}</p>
+        </mat-expansion-panel>
+    </div>
+</div>
